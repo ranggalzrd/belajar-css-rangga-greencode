@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,10 +28,66 @@
     <!-- <div class="kotak">tes</div> -->
     
     
-    <div class="kotak">
+    <!-- <div class="kotak">
         <div class="kotak2">kotak 1</div>
         <div class="kotak3">kotak 2</div>
         </div>
+    </div> -->
+
+
+</body>
+</html> -->
+
+<!-- flex-box -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .kotak-besar{
+            width: 400px;
+            height: 400px;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        /* psedou class menggunakan : */
+        .kotak-besar:hover{
+            background-color: greenyellow;
+        }
+        /* psedou elemen menggunakan :: */
+        .kotak-besar::before{
+            content: "tes";
+            background-color: red;
+        }
+        .kotak-besar::after{
+            content: "tes";
+            background-color: red;
+        }
+        .kotak-kecil{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+        }
+        .kotak-kecil:nth-child(1){
+            background-color: yellow;
+        }
+        .kotak-kecil:nth-child(3){
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak-besar">
+        <div class="kotak-kecil"></div>
+        <div class="kotak-kecil"></div>
+        <div class="kotak-kecil"></div>
     </div>
 </body>
 </html>
