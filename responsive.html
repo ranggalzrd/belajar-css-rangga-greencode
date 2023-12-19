@@ -1,0 +1,67 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kotak{
+            min-width: 200px;
+            max-width: 400px;
+            width: 40%;
+            height: 200px;
+            background-color: aqua;
+        }
+
+        /* @media (max-width:400px){
+            .kotak{
+                width: 100px;
+                background-color: red;
+            }
+        }
+
+        @media (min-width:200px) and (max-width:400px){
+            .kotak{
+                width: 100px;
+                background-color: blue;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="kotak"></div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .kotak-besar{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 50px;
+            justify-content: center;
+        }
+
+        .kotak-kecil{
+            width: 400px;
+            height: 200px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak-besar">
+        <div class="kotak-kecil"></div>
+        <div class="kotak-kecil"></div>
+    </div>
+</body>
+</html>
