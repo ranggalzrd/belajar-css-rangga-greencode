@@ -1,0 +1,84 @@
+<!-- Ubah Warna -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ubah warna */
+        .kotak{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            animation: UbahWarna 3s linear infinite;
+        }
+
+        @keyframes UbahWarna{
+            0%{
+                background-color: red;
+            }
+            50%{
+                background-color: blue;
+            }
+            100%{
+                background-color: greenyellow;
+            }
+        }
+
+        /* ubah warna dan ukuran */
+        .kotak1{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            animation: UbahWarnaUkuran 3s linear infinite;
+        }
+
+        @keyframes UbahWarnaUkuran{
+            0%{
+                background-color: red;
+                width: 200px;
+            }
+            50%{
+                background-color: blue;
+                width: 300px;
+            }
+            100%{
+                background-color: greenyellow;
+                width: 400px;
+            }
+        }
+
+        /* buat loading */
+        .lingkaran{
+            width: 100px;
+            height: 100px;
+            transform: rotate(30deg);
+            border-radius: 50%;
+            border: 30px solid rgb(127, 125, 125);
+            border-top: 30px solid black;
+            animation: loading 2s linear infinite;
+        }
+
+        @keyframes loading{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>ini animasi ubah warna</p>
+    <div class="kotak"></div>
+
+    <p>ini animasi ubah warna dan ukuran</p>
+    <div class="kotak1"></div>
+
+    <p>ini animasi loading</p>
+    <div class="lingkaran"></div>
+</body>
+</html>
+
